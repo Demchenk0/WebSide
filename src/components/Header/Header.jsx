@@ -3,7 +3,13 @@ import s from './Header.module.scss';
 import Image from 'next/image';
 import Logo from '../../img/Logo.svg';
 import Phone from '../../img/Phone.svg';
+import { useMediaQuery } from 'react-responsive'
+// import HeaderMob from './HeaderMob';
+
 const Header = () => {
+    // const isDesktopOrLaptop = useMediaQuery({
+    //     query: '(max-width: 756px)'
+    //   })
 	return (
 		<header className={s.header}>
 			<div className={s.container}>
