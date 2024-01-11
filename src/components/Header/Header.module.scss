@@ -1,13 +1,14 @@
 @import '../../../styles/mixins';
 .header {
-	// position: fixed;
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	z-index: 10;
 	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 	transition-duration: 300ms;
-    background-color: $text-gray-100;
+    // background-color: $text-gray-100;
+    // background-color: rgba(255, 255, 255, 0.5)
 }
 .container {
 	max-width: 1140px;
@@ -19,14 +20,20 @@
 }
 
 .list {
-	color: $text-black-700;
+	color: $text-white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 309px 0 97px;
+    gap: 40px;
 }
 .item {
-	padding: 16px;
+    font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
 }
 .box{
     width: 170px;

@@ -1,101 +1,45 @@
 @import '../../../styles/mixins';
-
+// .img {
+// 	display: flex;
+// 	margin: 0 auto;
+// 	justify-content: center;
+// 	align-items: center;
+// }
 .container {
 	max-width: 1140px;
-	display: flex;
-	align-items: center;
-	// justify-content: space-between;
-	padding-top: 30px;
+	// height: 780px;
+	width: 100%;
 	margin: auto;
-	background-color: black;
-}
-
-@keyframes button-before-back {
-	0% {
-		left: -1px;
-		right: auto;
-		top: auto;
-		bottom: -1px;
-		width: 30%;
-		height: calc(100% + 1px);
-	}
-	77% {
-		width: 0;
-		height: calc(100% + 1px);
-	}
-	100% {
-		width: 0;
-		height: 0;
-		left: -1px;
-		right: auto;
-		top: auto;
-		bottom: -1px;
-	}
-}
-
-@keyframes button-before2-back {
-	0% {
-		width: 0;
-		height: 0;
-		right: -1px;
-		left: auto;
-		top: -1px;
-		bottom: auto;
-	}
-	77% {
-		width: 70%;
-		height: 0;
-	}
-	100% {
-		width: 70%;
-		height: 0;
-		right: -1px;
-		left: auto;
-		top: -1px;
-		bottom: auto;
-	}
-}
-
-//   @keyframes button-before-back {
-//     0%{
-//         left: -1px;
-//     right: auto;
-//     top: auto;
-//     bottom: -1px;
-//     width: 30%;
-//     height: calc(100% + 1px);
-//     }
-//     77% {
-//         width: 0;
-//         height: calc(100% + 1px);
-//     }100% {
-//         width: 0;
-//         height: 0;
-//         left: -1px;
-//         right: auto;
-//         top: auto;
-//         bottom: -1px;
-//     }
+	padding: 16px;
+	position: relative;
+  }
+  .img {
+	// width: 100%;
+	// height: 100%;
+	border-radius: 16px;
+	background-position: center;
+	background-size: cover;
+	transition-duration: 500ms;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+  }
+// .container {
+// 	max-width: 1140px;
+// 	display: flex;
+// 	align-items: center;
+// 	// justify-content: space-between;
+// 	padding-top: 30px;
+// 	margin: auto;
 // }
-// @keyframes button-before2-back{
-//     0% {
-//         width: 0;
-//         height: 0;
-//         right: -1px;
-//         left: auto;
-//         top: -1px;
-//         bottom: auto;
-//     }
-//     77% {
-//         width: 70%;
-//         height: 0;
-//     }
-//     100% {
-//         width: 70%;
-//         height: 0;
-//         right: -1px;
-//         left: auto;
-//         top: -1px;
-//         bottom: auto;
-//     }
-// }
+.text {
+	color: $text-white;
+	font-family: Montserrat;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 152%; /* 72.96px */
+	letter-spacing: 2.4px;
+	text-transform: uppercase;
+}
