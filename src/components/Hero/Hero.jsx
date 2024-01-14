@@ -8,24 +8,24 @@ import Right from '../../img/right.svg'
 
 const Hero = () => {
   
-  const slides = [
-    {
-      url: '/img/1.jpg',
-    },
-    {
-      url: '/img/2.jpg',
-    },
-    {
-      url: '/img/3.jpg',
-    },
+  // const slides = [
+  //   {
+  //     url: '/img/1.jpg',
+  //   },
+  //   {
+  //     url: '/img/2.jpg',
+  //   },
+  //   {
+  //     url: '/img/3.jpg',
+  //   },
 
-    {
-      url: '/img/4.jpg',
-    },
-    {
-      url: '/img/5.jpg',
-    },
-  ];
+  //   {
+  //     url: '/img/4.jpg',
+  //   },
+  //   {
+  //     url: '/img/5.jpg',
+  //   },
+  // ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -42,8 +42,9 @@ const Hero = () => {
   };
   return (
     <section className={s.section}>
+    {/* <Image className={s.img}  src={Photo} alt="hero" />  */}
     <div className={s.container}>
-    {slides.map((slide, index) => (
+    {/* {slides.map((slide, index) => (
         <Image
           key={index}
           className={s.img} 
@@ -52,15 +53,12 @@ const Hero = () => {
           width={200}
           height={200}
         />
-      ))}
+      ))} */}
       <Image src={Left} alt="left" onClick={prevSlide} />
       <Image src={Right} alt="right" onClick={nextSlide} />
-     
     </div>
     </section>
   )
 }
 
 export default Hero
-
-{/* <Image className={s.img}  src={Photo} alt="hero" /> */}

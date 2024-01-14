@@ -1,13 +1,13 @@
 @import '../../../styles/mixins';
 .header {
-	position: fixed;
+	// position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	z-index: 10;
 	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 	transition-duration: 300ms;
-    // background-color: $text-gray-100;
+    background-color: $text-gray-100;
     // background-color: rgba(255, 255, 255, 0.5)
 }
 .container {
@@ -15,9 +15,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    padding-top: 30px;
 	margin: auto;
+    padding: 15px;
 }
+
 
 .list {
 	color: $text-white;
@@ -27,6 +28,7 @@
     margin: 0 309px 0 97px;
     gap: 40px;
 }
+
 .item {
     font-family: Montserrat;
 font-size: 15px;
@@ -67,10 +69,43 @@ font-weight: 400;
 line-height: normal;
 opacity: 0.5;
 }
-// .btn {
-// 	width: 163px;
-// 	border-radius: 5px;
-//     border: none;
-// 	background: #c9453b;
-//     color: white;
-// }
+
+
+// !Burger
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    
+  }
+  
+  .hamburgerTop,
+  .hamburgerMiddle,
+  .hamburgerBottom {
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    margin: 3px 0px;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+  
+  .hamburger:hover .hamburgerTop {
+    transform: rotate(45deg);
+    width: 1.4rem;
+
+  }
+  
+  .hamburger:hover .hamburgerMiddle {
+    opacity: 0;
+  }
+  
+  .hamburger:hover .hamburgerBottom {
+    transform: rotate(-45deg);
+    width: 1.4rem;
+
+  }
