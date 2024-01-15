@@ -7,8 +7,8 @@
 	z-index: 10;
 	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 	transition-duration: 300ms;
-    background-color: $text-gray-100;
-    // background-color: rgba(255, 255, 255, 0.5)
+	background-color: $text-gray-100;
+	// background-color: rgba(255, 255, 255, 0.5)
 }
 .container {
 	max-width: 1140px;
@@ -16,96 +16,90 @@
 	align-items: center;
 	justify-content: space-between;
 	margin: auto;
-    padding: 15px;
+	padding: 15px;
 }
-
 
 .list {
 	color: $text-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 309px 0 97px;
-    gap: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 309px 0 97px;
+	gap: 40px;
 }
 
 .item {
-    font-family: Montserrat;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
-.box{
-    width: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.box {
+	width: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.boxNumber{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 19px;
+.boxNumber {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 19px;
 }
 
 .number {
-    color: $text-black-700;
-    font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+	color: $text-black-700;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 .boxText {
-    color: $text-black-700;
-    text-align: center;
-font-family: Montserrat;
-font-size: 8px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-opacity: 0.5;
+	color: $text-black-700;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 8px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	opacity: 0.5;
 }
-
 
 // !Burger
 
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 1.5rem;
-    width: 1.5rem;
-    cursor: pointer;
-    
-  }
-  
-  .hamburgerTop,
-  .hamburgerMiddle,
-  .hamburgerBottom {
-    height: 5px;
-    background: black;
-    border-radius: 5px;
-    margin: 3px 0px;
-    transform-origin: left;
-    transition: all 0.5s;
-  }
-  
-  .hamburger:hover .hamburgerTop {
-    transform: rotate(45deg);
-    width: 1.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 1.5rem;
+	width: 1.5rem;
+	cursor: pointer;
+}
 
-  }
-  
-  .hamburger:hover .hamburgerMiddle {
-    opacity: 0;
-  }
-  
-  .hamburger:hover .hamburgerBottom {
-    transform: rotate(-45deg);
-    width: 1.4rem;
+.hamburgerTop,
+.hamburgerMiddle,
+.hamburgerBottom {
+	height: 5px;
+	background: black;
+	border-radius: 5px;
+	margin: 3px 0px;
+	transform-origin: left;
+	transition: all 0.5s;
+}
 
-  }
+.hamburger:hover .hamburgerTop {
+	transform: rotate(45deg);
+	width: 1.4rem;
+}
+
+.hamburger:hover .hamburgerMiddle {
+	opacity: 0;
+}
+
+.hamburger:hover .hamburgerBottom {
+	transform: rotate(-45deg);
+	width: 1.4rem;
+}

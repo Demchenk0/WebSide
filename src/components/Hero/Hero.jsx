@@ -1,50 +1,89 @@
-'use client' 
-import React, {useState} from 'react'
-import s from './Hero.module.scss'
-import  Image from 'next/image';
-import Photo from "../../img/hero.jpg"
+// 'use client';
+import React  from 'react';
+import s from './Hero.module.scss';
+import Image from 'next/image';
+// import Photo from '../../img/hero.jpg';
 import Left from '../../img/left.svg'
 import Right from '../../img/right.svg'
+// import Carousel from './Carousel';
 
 const Hero = () => {
-  
-  // const slides = [
-  //   {
-  //     url: '/img/1.jpg',
-  //   },
-  //   {
-  //     url: '/img/2.jpg',
-  //   },
-  //   {
-  //     url: '/img/3.jpg',
-  //   },
 
-  //   {
-  //     url: '/img/4.jpg',
-  //   },
-  //   {
-  //     url: '/img/5.jpg',
-  //   },
-  // ];
+	return (
+		<section className={s.section}>
+			<div className={s.container}>
+      <Image src={Left} alt="left" />
+      <Image src={Right} alt="right" />
+      <button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
+      {/* <Carousel/> */}
+      {/* <div>
+				<h2> Multiple items </h2>
+				<Slider {...settings}>
+					<div>
+          <h3>Hello</h3>
+							<img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-  return (
-    <section className={s.section}>
-    {/* <Image className={s.img}  src={Photo} alt="hero" />  */}
-    <div className={s.container}>
-    {/* {slides.map((slide, index) => (
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
+
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
+
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
+
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
+
+					</div>
+					<div>
+          <img className={s.img} src="/img/hero.jpg"  alt="Slide 1"
+            width={300}
+            height={200}/>
+
+					</div>
+				</Slider>
+			</div> */}
+			</div>
+		</section>
+	);
+};
+
+export default Hero;
+
+
+	{/* {slides.map((slide, index) => (
         <Image
           key={index}
           className={s.img} 
@@ -54,11 +93,4 @@ const Hero = () => {
           height={200}
         />
       ))} */}
-      <Image src={Left} alt="left" onClick={prevSlide} />
-      <Image src={Right} alt="right" onClick={nextSlide} />
-    </div>
-    </section>
-  )
-}
-
-export default Hero
+				
