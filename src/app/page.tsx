@@ -4,6 +4,7 @@ import HeaderMob from './../components/Header/HeaderMob';
 import Services from './../components/Services/Services';
 import About from './../components/About/About';
 import Work from './../components/Work/Work';
+import Advantages from './../components/Advantages/Advantages';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <About /> 
       <Work />
+      <Advantages />
     </main>
     </>
   )
