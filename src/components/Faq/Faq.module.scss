@@ -1,0 +1,75 @@
+@import '../../../styles/mixins';
+.section {
+	margin-top: 40px;
+}
+
+.container {
+	max-width: 1140px;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	padding: 14.5px 15px;
+	margin: auto;
+}
+.title {
+	color: $text-black-600;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 152%; /* 36.48px */
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+.item {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	border-bottom: 1px solid $bg-black-600;
+	padding: 15px 0;
+}
+.itemBox {
+	display: flex;
+	justify-content: space-between;
+}
+.titleSecondary {
+	color: $text-black-600;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 152%; /* 22.8px */
+}
+.rotated {
+    transform: rotate(180deg);
+    animation: fadeIn 0.5s ease; 
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.hidden {
+    animation: fadeIn 0.5s ease; 
+}
+.text {
+    margin-top: 10px;
+	color: $text-black-600;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 152%; /* 22.8px */
+    span {
+        font-weight: 500;
+text-decoration-line: underline;
+    }
+}

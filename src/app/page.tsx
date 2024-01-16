@@ -7,6 +7,7 @@ import Work from './../components/Work/Work';
 import Advantages from './../components/Advantages/Advantages';
 import Form from './../components/Form/Form';
 import Review from './../components/Review/Review';
+import Faq from './../components/Faq/Faq';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Advantages />
       <Form />
       <Review/>
+      <Faq/>
     </main>
     </>
   )
