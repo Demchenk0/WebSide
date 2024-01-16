@@ -1,0 +1,57 @@
+@import '../../../styles/mixins';
+.section {
+	margin-top: 40px;
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+}
+
+
+.wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr );
+    grid-template-rows: auto;
+  }
+  
+  
+  .img1 {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  .img2 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .img3 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .img4 {
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+  .img5{
+    width: 100%;
+     grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  
+  .img6{
+    width: 100%;
+     grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  
+  .img7{
+    width: 100%;
+     grid-column: 1 / 3;
+    grid-row: 5 / 7;
+  }
+  

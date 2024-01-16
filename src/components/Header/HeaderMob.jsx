@@ -8,7 +8,7 @@ const HeaderMob = () => {
 		<header className={s.header}>
 			<div className={s.container}>
 				<a href="/">
-					<Image src={Logo} alt="logo" width={107} height={40} />
+					<Image src={Logo} alt="logo"  className={s.logo}/>
 				</a>
 				<div class={s.hamburger}>
 					<span class={s.hamburgerTop}></span>
