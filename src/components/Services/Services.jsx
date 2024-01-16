@@ -19,21 +19,23 @@ const Services = () => {
 						<Image src={Service1} alt="phone" className={s.img} />
 						<div className={s.boxText}>
 							<p>Фуршет</p>
-							<a href="/">Детальніше</a>
+							<button>Детальніше</button>
+
 						</div>
 					</div>
                     <div className={s.card}>
 						<Image src={Service2} alt="phone" className={s.img} />
 						<div className={s.boxText}>
 							<p>Здорове харчування</p>
-							<a href="/">Детальніше</a>
+							<button>Детальніше</button>
+
 						</div>
 					</div>
                     <div className={s.card}>
 						<Image src={Service3} alt="phone" className={s.img} />
 						<div className={s.boxText}>
 							<p>Доставка в офіси</p>
-							<a href="/">Детальніше</a>
+							<button>Детальніше</button>
 						</div>
 					</div>
                     <button className={`${s.button} ${s.animate}`}>Залишити заявку</button>

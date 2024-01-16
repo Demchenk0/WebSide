@@ -30,7 +30,7 @@
 	text-transform: uppercase;
 }
 .text {
-	color: rgba(0, 0, 0, 0.52);
+	color: $text-black;
 	font-family: Montserrat;
 	font-size: 15px;
 	font-style: normal;
@@ -59,7 +59,7 @@
 	line-height: 150%; /* 22.5px */
     gap: 120px;
     text-align: start;
-	a {
+	button {
 		text-decoration-line: underline;
 	}
 }

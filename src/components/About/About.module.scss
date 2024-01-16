@@ -1,0 +1,55 @@
+@import '../../../styles/mixins';
+.section {
+	margin-top: 65px;
+	background-color: $bg-red-900;
+	position: relative;
+}
+.container {
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+	top: 25px;
+}
+
+.boxImg {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: relative;
+	top: -25px;
+	gap: 15px;
+}
+// .img {
+// 	width: 100%;
+// }
+.boxText {
+	display: flex;
+	justify-content: space-between;
+	color: $text-white;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 152%; /* 36.48px */
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	button {
+		font-family: Montserrat;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 150%; /* 22.5px */
+		text-align: start;
+		text-decoration-line: underline;
+	}
+}
+.text {
+	color: $text-white;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 22.5px */
+}
