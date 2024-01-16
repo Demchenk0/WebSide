@@ -5,6 +5,7 @@ import Services from './../components/Services/Services';
 import About from './../components/About/About';
 import Work from './../components/Work/Work';
 import Advantages from './../components/Advantages/Advantages';
+import Form from './../components/Form/Form';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <About /> 
       <Work />
       <Advantages />
+      <Form />
     </main>
     </>
   )
