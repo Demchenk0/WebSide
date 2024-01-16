@@ -6,6 +6,7 @@ import About from './../components/About/About';
 import Work from './../components/Work/Work';
 import Advantages from './../components/Advantages/Advantages';
 import Form from './../components/Form/Form';
+import Review from './../components/Review/Review';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Work />
       <Advantages />
       <Form />
+      <Review/>
     </main>
     </>
   )
