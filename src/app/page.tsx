@@ -8,6 +8,7 @@ import Advantages from './../components/Advantages/Advantages';
 import Form from './../components/Form/Form';
 import Review from './../components/Review/Review';
 import Faq from './../components/Faq/Faq';
+import Footer from './../components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Review/>
       <Faq/>
     </main>
+    <Footer/>
     </>
   )
 }

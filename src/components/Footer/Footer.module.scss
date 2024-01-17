@@ -1,0 +1,54 @@
+@import '../../../styles/mixins';
+.section {
+	margin-top: 40px;
+}
+
+.container {
+	max-width: 1140px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+}
+.img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+.inf {
+	padding: 17.5px;
+	background-color: $bg-stone-400;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 10px;
+}
+.text {
+	color: $text-white;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 152%; /* 22.8px */
+}
+.svg {
+	display: flex;
+	gap: 10px;
+}
+.list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding: 15px 0;
+	li {
+		color: $text-black-600;
+		font-family: Montserrat;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
