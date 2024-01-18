@@ -17,38 +17,47 @@ const HeaderMob = () => {
 	return (
 		<header className={s.header}>
 			<div className={s.container}>
-				<a href="/">
-					<Image src={Logo} alt="logo" className={s.logo} />
-				</a>
 				{/* Modal */}
 				<div className={s.icon} onClick={handleNav}>
 					{nav ? (
-						<Image src={Left} alt="left" />
+						<>
+							<a href="/">
+								<Image src={Logo} alt="logo" className={s.logo} />
+							</a>
+							<Image src={Left} alt="left" />
+						</>
 					) : (
-						<Image src={Right} alt="right" />
+						<>
+							<a href="/">
+								<Image src={Logo} alt="logo" className={s.logo} />
+							</a>
+							<Image src={Right} alt="right" />
+						</>
 					)}
 				</div>
 
 				{/* Modal menu */}
 				{nav && (
 					<div className={s.mobmenu}>
-					<button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
+						<button className={`${s.button} ${s.animate}`}>
+							Залишити заявку
+						</button>
 						<ul className={s.listMob}>
-							<li className={s.item}>Послуги</li>
-							<li className={s.item}>Про нас</li>
-							<li className={s.item}>Галерея</li>
-							<li className={s.item}>Відгуки</li>
+							<li className={s.itemMob}>Послуги</li>
+							<li className={s.itemMob}>Про нас</li>
+							<li className={s.itemMob}>Галерея</li>
+							<li className={s.itemMob}>Відгуки</li>
 						</ul>
 						<div className={s.box}>
-					<div className={s.boxNumber}>
-						<Image src={Phone} alt="phone" />
-						<div className={s.number}>095 234 23 23</div>
-					</div>
-					<p className={s.boxText}>
-						Безкоштовний дзвінок зі стаціонарних та мобільних телефонів по всій
-						території України
-					</p>
-				</div>
+							<div className={s.boxNumber}>
+								<Image src={Phone} alt="phone" />
+								<div className={s.number}>095 234 23 23</div>
+							</div>
+							<p className={s.boxText}>
+								Безкоштовний дзвінок зі стаціонарних та мобільних телефонів по
+								всій території України
+							</p>
+						</div>
 					</div>
 				)}
 				{/* <div class={s.hamburger}>
