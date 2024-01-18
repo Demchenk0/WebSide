@@ -9,37 +9,40 @@ const Services = () => {
 	return (
 		<section className={s.section}>
 			<div className={s.container}>
+				<div className={s.textBox}>
 					<h1 className={s.title}>Послуги</h1>
 					<p className={s.text}>
 						Оберіть те, що підходить саме Вам. Якщо важко зробити вибір, залиште
 						заявку та ми Вам допоможемо
 					</p>
+				</div>
+
 				<div className={s.service}>
 					<div className={s.card}>
 						<Image src={Service1} alt="phone" className={s.img} />
 						<div className={s.boxText}>
 							<p>Фуршет</p>
 							<button>Детальніше</button>
-
 						</div>
 					</div>
-                    <div className={s.card}>
+					<div className={s.card}>
 						<Image src={Service2} alt="phone" className={s.img} />
 						<div className={s.boxText}>
 							<p>Здорове харчування</p>
 							<button>Детальніше</button>
-
 						</div>
 					</div>
-                    <div className={s.card}>
+					<div className={s.card}>
 						<Image src={Service3} alt="phone" className={s.img} />
 						<div className={s.boxText}>
 							<p>Доставка в офіси</p>
 							<button>Детальніше</button>
 						</div>
 					</div>
-                    <button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
 				</div>
+					<button className={`${s.button} ${s.animate}`}>
+						Залишити заявку
+					</button>
 			</div>
 		</section>
 	);

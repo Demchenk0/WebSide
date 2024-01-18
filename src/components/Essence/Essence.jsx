@@ -1,13 +1,13 @@
 // 'use client';
 import React  from 'react';
-import s from './Hero.module.scss';
+import s from './Essence.module.scss';
 import Image from 'next/image';
 // import Photo from '../../img/hero.jpg';
 import Left from '../../img/left.svg'
 import Right from '../../img/right.svg'
 // import Carousel from './Carousel';
 
-const Hero = () => {
+const Essence = () => {
 
 	return (
 		<section className={s.section}>
@@ -80,7 +80,7 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default Essence;
 
 
 	{/* {slides.map((slide, index) => (
