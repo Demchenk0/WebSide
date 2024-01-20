@@ -1,15 +1,31 @@
+'use client';
 import React from 'react';
 import s from './About.module.scss';
+import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
-import About1 from '../../img/aboutMob1.jpg';
-import About2 from '../../img/aboutMob2.jpg';
+import AboutMob1 from '../../img/aboutMob1.jpg';
+import AboutMob2 from '../../img/aboutMob2.jpg';
+import AboutDes1 from '../../img/aboutDes1.jpg';
+import AboutDes2 from '../../img/aboutDes2.jpg';
+
 const About = () => {
+	const isBigScreen = useMediaQuery({ query: '(min-width: 1300px)' });
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1299px)' });
 	return (
 		<section className={s.section}>
-				{/* <div className={s.boxImg}>
-					<Image src={About1} alt="phone" className={s.img} />
-					<Image src={About2} alt="phone" className={s.img} />
-				</div> */}
+			{isBigScreen && (
+				<div className={s.boxImg}>
+					<Image src={AboutDes1} alt="about2" />
+					<Image src={AboutDes2} alt="about2" />
+				</div>
+			)}
+			{isTabletOrMobile && (
+				<div className={s.boxImg}>
+					<Image src={AboutMob1} alt="about1" />
+					<Image src={AboutMob2} alt="about2" />
+				</div>
+			)}
+
 			<div className={s.container}>
 				<p className={s.text}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

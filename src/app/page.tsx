@@ -1,3 +1,4 @@
+// 'use client';
 import Header from './../components/Header/Header';
 import Essence from './../components/Essence/Essence';
 import HeaderMob from './../components/Header/HeaderMob';
