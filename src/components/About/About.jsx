@@ -6,21 +6,21 @@ import About2 from '../../img/aboutMob2.jpg';
 const About = () => {
 	return (
 		<section className={s.section}>
-			<div className={s.container}>
-				<div className={s.boxImg}>
+				{/* <div className={s.boxImg}>
 					<Image src={About1} alt="phone" className={s.img} />
 					<Image src={About2} alt="phone" className={s.img} />
-				</div>
-				<div className={s.boxText}>
-					<h1>Про нас </h1>
-					<button>Детальніше</button>
-				</div>
+				</div> */}
+			<div className={s.container}>
 				<p className={s.text}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 					minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetu
 					nostrud Lorem ipsum dolor sit amet nostrud{' '}
 				</p>
+				<div className={s.boxText}>
+					<h1>Про нас </h1>
+					<button>Детальніше</button>
+				</div>
 			</div>
 		</section>
 	);
