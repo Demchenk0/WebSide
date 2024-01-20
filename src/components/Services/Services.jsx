@@ -28,14 +28,14 @@ const Services = () => {
 					<div className={s.card}>
 						<Image src={Service2} alt="phone" className={s.img} />
 						<div className={s.boxText}>
-							<p>Здорове харчування</p>
+							<p>Здорове  <br /> харчування</p>
 							<button>Детальніше</button>
 						</div>
 					</div>
 					<div className={s.card}>
 						<Image src={Service3} alt="phone" className={s.img} />
 						<div className={s.boxText}>
-							<p>Доставка в офіси</p>
+							<p>Доставка <br /> в офіси</p>
 							<button>Детальніше</button>
 						</div>
 					</div>
