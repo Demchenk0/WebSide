@@ -1,11 +1,14 @@
 @import '../../../styles/mixins';
+
 .section {
 	margin-top: 40px;
+	@media screen and (min-width: $desktop) {
+		margin-top: 60px;
+	}
 }
 .container {
 	max-width: 1140px;
 	display: flex;
-	// align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	padding-left: 15px;
@@ -22,46 +25,63 @@
 	line-height: 152%; /* 36.48px */
 	letter-spacing: 1.2px;
 	text-transform: uppercase;
-    padding-bottom: 15px;
+	padding-bottom: 15px;
+	@media screen and (min-width: $desktop) {
+		font-size: 48px;
+		letter-spacing: 2.4px;
+	}
 }
-// .list {
-	
-// }
+.list {
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
 .item {
-    color: $text-black-600;
+	color: $text-black-600;
 	font-family: Montserrat;
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 150%; /* 22.5px */
 	padding: 16.5px 19.5px;
-    h3 {
-		font-weight: 600;
-        padding-bottom: 5px;
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 5px;
+		font-size: 18px;
+		padding: 30.5px 28px;
 	}
-    p {
+	h3 {
+		font-weight: 600;
+		padding-bottom: 5px;
+	}
+	p {
 		font-weight: 400;
-
-    }
+	}
+	@media screen and (min-width: $desktop) {
+		width: 356px;
+	}
 }
 .item:nth-child(odd) {
 	background-color: $bg-stone-400;
-    color: $text-white;
+	color: $text-white;
 }
-
-
 
 .button {
 	position: relative;
 	z-index: 100;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
 	// padding-right: 25px;
 	// padding-left: 25px;
 	height: 48px;
 	width: 290px;
-    // !Изменить цвет показать Коле
+	// !Изменить цвет показать Коле
 	border: 1px solid rgba(179, 179, 179, 0.2);
 	// color: #b3b3b3;
 	// font-size: 11px;

@@ -40,8 +40,8 @@ const Advantages = () => {
 						<h3>Швидке замовлення</h3>
 						<p>Можливість замовити кейтерінг за декілька хвилин</p>
 					</li>
-                <button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
 				</ul>
+                <button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
 			</div>
 		</section>
 	);
