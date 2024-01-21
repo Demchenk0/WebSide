@@ -1,16 +1,30 @@
 @import '../../../styles/mixins';
+@media screen and (min-width: $desktop) {}
 .section {
 	margin-top: 40px;
 	background-color: $bg-stone-400;
+@media screen and (min-width: $desktop) {
+	background-color: $bg-red-900;
+	margin-top: 93px;
+
+}
+
 }
 
 .container {
 	max-width: 1140px;
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	padding: 14.5px 15px;
 	margin: auto;
+@media screen and (min-width: $desktop) {
+	flex-direction: row;
+	justify-content: flex-end;
+    gap: 20px;
+	padding: 0;
+}
 }
 
 .title {
@@ -23,6 +37,17 @@
 	line-height: 152%; /* 36.48px */
 	letter-spacing: 1.2px;
 	text-transform: uppercase;
+	@media screen and (min-width: $desktop) {
+		font-size: 48px;
+		text-align: start;
+    width: min-content;
+	}
+}
+.primaryBox{
+	@media screen and (min-width: $desktop) {
+		gap: 20px;
+
+	}
 }
 .text {
 	padding: 5px 55px 15px 55px;
@@ -33,15 +58,33 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 150%; /* 22.5px */
+	@media screen and (min-width: $desktop) {
+	font-size: 24px;
+	text-align: start;
+	padding: 0;
+	}
+}
+.boxForm{
+	width: 100% ;
+	@media screen and (min-width: $desktop) {
+		padding: 58px 48px;
+		background-color: $bg-stone-400;
+		position: relative;
+		top: -33px;
+		width: 463px;
+		margin-bottom: -33px;
+	 }
 }
 .form {
 	display: flex;
 	flex-direction: column;
 	margin: auto 0;
-	max-width: 400px;
 	text-align: left;
 	width: 100%;
 	gap: 25px;
+	@media screen and (min-width: $desktop) {
+	gap: 35px;
+}
 }
 .input {
 	color: $text-white;

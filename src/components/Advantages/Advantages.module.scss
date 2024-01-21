@@ -15,6 +15,9 @@
 	padding-right: 15px;
 	margin: auto;
 	top: 25px;
+	@media screen and (min-width: $desktop) {
+		padding: 0;
+	}
 }
 .title {
 	color: $text-black-600;
@@ -63,7 +66,7 @@
 		font-weight: 400;
 	}
 	@media screen and (min-width: $desktop) {
-		width: 356px;
+		width: 366px;
 	}
 }
 .item:nth-child(odd) {

@@ -1,12 +1,18 @@
 @import '../../../styles/mixins';
 .section {
 	margin-top: 40px;
+	@media screen and (min-width: $desktop) {
+		margin-top: 60px;
+	}
 }
 .container {
   max-width: 1140px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: auto;
+	@media screen and (min-width: $desktop) {
+		padding: 0;
+	}
 }
 
 .wrapper {

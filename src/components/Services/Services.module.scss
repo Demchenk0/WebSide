@@ -58,11 +58,11 @@
 	padding: 15px 0;
 	gap: 25px;
 	align-items: center;
+	width: 100%;
 	@media screen and (min-width: $desktop) {
 		padding: 20px 0 40px 0;
 		flex-direction: row;
 		align-items: flex-start;
-		width: 100%;
 	}
 }
 .card {
