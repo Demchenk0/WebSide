@@ -1,8 +1,14 @@
+'use client';
 import React from 'react';
 import s from './Review.module.scss';
+import Left from '../../img/leftSmall.svg';
+import Right from '../../img/rightSmall.svg';
+import Image from 'next/image';
 const Review = () => {
 	return (
 		<section className={s.section}>
+			<Image src={Left} alt="left" />
+			<Image src={Right} alt="right" />
 			<div className={s.container}>
 				<div className={s.box}>
 					<h1 className={s.title}>Відгуки клієнтів</h1>

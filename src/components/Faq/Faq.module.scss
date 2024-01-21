@@ -35,7 +35,7 @@
 	display: flex;
 	flex-direction: column;
 	@media screen and (min-width: $desktop) {
-		border-left: 1px solid #000;
+		border-left: 1px solid $bg-black;
 		padding-left: 20px;
 		width: 100%;
 		:last-child{

@@ -1,19 +1,23 @@
 @import '../../../styles/mixins';
+@media screen and (min-width: $desktop) {
+}
 .section {
 	margin-top: 40px;
+	@media screen and (min-width: $desktop) {
+		margin-top: 60px;
+	}
 }
 
 .container {
 	max-width: 1140px;
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: auto;
+	@media screen and (min-width: $desktop) {
+	padding: 0;
+}
 }
 .title {
-	width: 130px;
 	color: $text-black-600;
 	font-family: Montserrat;
 	font-size: 24px;
@@ -22,6 +26,9 @@
 	line-height: 152%; /* 36.48px */
 	letter-spacing: 1.2px;
 	text-transform: uppercase;
+	@media screen and (min-width: $desktop) {
+	font-size: 48px;
+}
 }
 .btn {
 	color: $text-black-600;
@@ -33,12 +40,21 @@
 	line-height: 150%; /* 22.5px */
 	text-decoration-line: underline;
 	padding-bottom: 5px;
+	@media screen and (min-width: $desktop) {
+		padding-bottom: 0;
+		text-align: center;
+	font-size: 24px;
+
+	}
 }
 .box {
 	display: flex;
 	justify-content: space-between;
 	gap: 66px;
 	align-items: flex-end;
+	@media screen and (min-width: $desktop) {
+		align-items: center;
+	}
 }
 .list {
 	display: flex;
