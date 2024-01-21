@@ -1,6 +1,10 @@
 @import '../../../styles/mixins';
 .section {
 	margin-top: 40px;
+	@media screen and (min-width: $desktop) {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
 }
 
 .container {
@@ -8,12 +12,27 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: auto;
+	@media screen and (min-width: $desktop) {
+		padding: 0;
+		display: flex;
+		gap: 20px;
+	}
 }
-.img {
+.map {
+	width: 100%;
+	@media screen and (min-width: $desktop) {
+		width: 753px;
+		height: 416px;
+	}
+}
+.logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 20px auto;
+	@media screen and (min-width: $desktop) {
+		margin: 0 auto 15px;
+	}
 }
 .inf {
 	padding: 17.5px;
@@ -22,6 +41,9 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 10px;
+	@media screen and (min-width: $desktop) {
+		padding: 17px 57px;
+	}
 }
 .text {
 	color: $text-white;
@@ -31,9 +53,17 @@
 	font-weight: 500;
 	line-height: 152%; /* 22.8px */
 }
+.textSecondary {
+	color: $text-white;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 152%; /* 22.8px */
+}
 .svg {
 	display: flex;
-	gap: 10px;
+	gap: 15px;
 }
 .list {
 	display: flex;
@@ -43,6 +73,7 @@
 	gap: 20px;
 	flex-wrap: wrap;
 	padding: 15px 0;
+	
 	li {
 		color: $text-black-600;
 		font-family: Montserrat;
@@ -50,5 +81,10 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+	}
+	
+	@media screen and (min-width: $desktop) {
+		padding: 0;
+		padding-top: 15px;
 	}
 }
