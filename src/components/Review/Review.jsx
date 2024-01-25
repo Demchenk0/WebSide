@@ -1,15 +1,17 @@
 'use client';
 import React from 'react';
 import s from './Review.module.scss';
-import Left from '../../img/leftSmall.svg';
-import Right from '../../img/rightSmall.svg';
-import Image from 'next/image';
+
+// import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
+import Swiper from './MySwiper';
+
 const Review = () => {
+	const isBigScreen = useMediaQuery({ query: '(min-width: 1300px)' });
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1299px)' });
 	return (
 		<section className={s.section}>
-			<Image src={Left} alt="left" />
-			<Image src={Right} alt="right" />
-			<div className={s.container}>
+		{isTabletOrMobile && <div className={s.container}>
 				<div className={s.box}>
 					<h1 className={s.title}>Відгуки клієнтів</h1>
 					<button className={s.btn}>Детальніше</button>
@@ -40,7 +42,10 @@ const Review = () => {
 						</p>
 					</li>
 				</ul>
-			</div>
+			</div>}
+			{isBigScreen && <Swiper />}
+			
+			
 		</section>
 	);
 };
