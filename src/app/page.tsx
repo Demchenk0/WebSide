@@ -11,6 +11,7 @@ import Review from './../components/Review/Review';
 import Faq from './../components/Faq/Faq';
 import Footer from './../components/Footer/Footer';
 import { useMediaQuery } from 'react-responsive';
+// import Carousel from '@/components/Essence/Carousel';
 
 export default function Home() {
 	const isBigScreen = useMediaQuery({ query: '(min-width: 1300px)' });
@@ -20,6 +21,7 @@ export default function Home() {
 			{isTabletOrMobile && <HeaderMob />}
 			{isBigScreen && <Header />}
 			<main>
+				{/* <Carousel/> */}
 				<Essence />
 				<Services />
 				<About />

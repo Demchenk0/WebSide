@@ -1,68 +1,101 @@
 'use client';
-import React from 'react';
-import Slider from 'react-slick';
-// import '~slick-carousel/slick/slick.css';
-// import '~slick-carousel/slick/slick-theme.css';
-import s from './Hero.module.scss';
+
+// import React from 'react';
+// import s from './Essence.module.scss';
 import Image from 'next/image';
 import Photo from '../../img/hero.jpg';
 
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+// import './styles.css';
 
-const settings = {
-	dots: true,
-	infinite: true,
-	speed: 500,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-};
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+// const settings = {
+// 	dots: true,
+// 	infinite: true,
+// 	speed: 500,
+// 	slidesToShow: 1,
+// 	slidesToScroll: 1,
+// };
+
 const Carousel = () => {
 	return (
-		<div>
-			<h2> Single Item</h2>
-			<Slider {...settings}>
-				<div>
-					<Image src={Photo} width={100} height={100} alt="foto" />
-                    <div>
-                    <h3>Slick</h3>
-                        <p>We use</p>
-                        </div>
-				</div>
-                <div className={s.card}>
-					<Image src={Photo} width={100} height={100} alt="foto" />
-                    <div>
-                    <h3>Slick</h3>
-                        <p>We use</p>
-                        </div>
-				</div><div className={s.card}>
-					<Image src={Photo} width={100} height={100} alt="foto" />
-                    <div>
-                    <h3>Slick</h3>
-                        <p>We use</p>
-                        </div>
-				</div><div className={s.card}>
-					<Image src={Photo} width={100} height={100} alt="foto" />
-                    <div>
-                    <h3>Slick</h3>
-                        <p>We use</p>
-                        </div>
-				</div><div className={s.card}>
-					<Image src={Photo} width={100} height={100} alt="foto" />
-                    <div>
-                    <h3>Slick</h3>
-                        <p>We use</p>
-                        </div>
-				</div><div className={s.card}>
-					<Image src={Photo} width={100} height={100} alt="foto" />
-                    <div>
-                    <h3>Slick</h3>
-                        <p>We use</p>
-                        </div>
-				</div>
-			</Slider>
-		</div>
+		<>
+			<Swiper
+				spaceBetween={50}
+				slidesPerView={3}
+				onSlideChange={() => console.log('slide change')}
+				onSwiper={swiper => console.log(swiper)}
+               
+			>
+				<SwiperSlide>
+					<div>
+						<Image src={Photo} width={100} height={100} alt="foto" />
+						<div>
+							<h3>Slick</h3>
+							<p>We use</p>
+						</div>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>Slide 2</SwiperSlide>
+				<SwiperSlide>Slide 3</SwiperSlide>
+				<SwiperSlide>Slide 4</SwiperSlide>
+				...
+			</Swiper>
+		</>
+		// <div>
+		// 	<h2> Single Item</h2>
+		// 	<Slider {...settings}>
+		// 		<div>
+		// 			<Image src={Photo} width={100} height={100} alt="foto" />
+		//             <div>
+		//             <h3>Slick</h3>
+		//                 <p>We use</p>
+		//                 </div>
+		// 		</div>
+		//         <div className={s.card}>
+		// 			<Image src={Photo} width={100} height={100} alt="foto" />
+		//             <div>
+		//             <h3>Slick</h3>
+		//                 <p>We use</p>
+		//                 </div>
+		// 		</div><div className={s.card}>
+		// 			<Image src={Photo} width={100} height={100} alt="foto" />
+		//             <div>
+		//             <h3>Slick</h3>
+		//                 <p>We use</p>
+		//                 </div>
+		// 		</div><div className={s.card}>
+		// 			<Image src={Photo} width={100} height={100} alt="foto" />
+		//             <div>
+		//             <h3>Slick</h3>
+		//                 <p>We use</p>
+		//                 </div>
+		// 		</div><div className={s.card}>
+		// 			<Image src={Photo} width={100} height={100} alt="foto" />
+		//             <div>
+		//             <h3>Slick</h3>
+		//                 <p>We use</p>
+		//                 </div>
+		// 		</div><div className={s.card}>
+		// 			<Image src={Photo} width={100} height={100} alt="foto" />
+		//             <div>
+		//             <h3>Slick</h3>
+		//                 <p>We use</p>
+		//                 </div>
+		// 		</div>
+		// 	</Slider>
+		// </div>
 	);
 };
+export default Carousel;
 
 // function Carousel  ()  {
 //   return (
@@ -91,5 +124,3 @@ const Carousel = () => {
 //       </div>
 //   )
 // }
-
-export default Carousel;

@@ -1,22 +1,21 @@
 'use client';
-import React  from 'react';
+import React from 'react';
 import s from './Essence.module.scss';
 import Image from 'next/image';
 // import Photo from '../../img/hero.jpg';
-import Left from '../../img/left.svg'
-import Right from '../../img/right.svg'
+import Left from '../../img/left.svg';
+import Right from '../../img/right.svg';
 // import Carousel from './Carousel';
 
 const Essence = () => {
-
 	return (
 		<section className={s.section}>
 			<div className={s.container}>
-      <Image src={Left} alt="left" />
-      <Image src={Right} alt="right" />
-      <button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
-      {/* <Carousel/> */}
-      {/* <div>
+				<Image src={Left} alt="left" />
+				<Image src={Right} alt="right" />
+				<button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
+				{/* <Carousel /> */}
+				{/* <div>
 				<h2> Multiple items </h2>
 				<Slider {...settings}>
 					<div>
@@ -82,8 +81,8 @@ const Essence = () => {
 
 export default Essence;
 
-
-	{/* {slides.map((slide, index) => (
+{
+	/* {slides.map((slide, index) => (
         <Image
           key={index}
           className={s.img} 
@@ -92,5 +91,5 @@ export default Essence;
           width={200}
           height={200}
         />
-      ))} */}
-				
+      ))} */
+}

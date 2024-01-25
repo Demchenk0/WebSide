@@ -13,12 +13,15 @@ const MySwiper = () => {
 	const swiperRef = useRef(null);
 
 	useEffect(() => {
+		// swiperRef.current.style = { display: 'flex'}
 		const swiperContainer = swiperRef.current;
+
 		const params = {
 			navigation: true,
 			pagination: true,
 			slidesPerView: 3,
 			pagination: { clickable: true },
+			spaceBetween: 30,
 			//add thi
 			injectStyles: [
 				`
@@ -26,9 +29,10 @@ const MySwiper = () => {
           display: flex;
           justify-content: end;
           flex-direction: column;
+
         }
         .swiper-wrapper{
-          gap:15px;
+        //   gap:20px;
         }
           .swiper-button-next,
           .swiper-button-prev {
@@ -117,8 +121,9 @@ const MySwiper = () => {
 						<p className={s.text}>Олександра</p>
 						<span className={s.span}>23.11.2023</span>
 						<p className={s.text}>
-            Чудовий сервіс! 
-Швидке обслуговування!Все на дуже високому рівні. Гостям дуже сподобалось, всі смачно поїли та відпочили. Дякуємо організаторам за таке свято!
+							Чудовий сервіс! Швидке обслуговування!Все на дуже високому рівні.
+							Гостям дуже сподобалось, всі смачно поїли та відпочили. Дякуємо
+							організаторам за таке свято!
 						</p>
 					</div>
 				</swiper-slide>
