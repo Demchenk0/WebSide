@@ -87,13 +87,13 @@
 }
 }
 .input {
-	color: $text-white;
+	color: $text-black-700;
 	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 150%; /* 21px */
-	border-bottom: 1px solid $text-white;
+	border-bottom: 1px solid $text-black-700;
 	padding-left: 5px;
 	padding-bottom: 5px;
     background-color: transparent;
@@ -101,7 +101,7 @@
     // opacity: 0.7; 
 }
 .input::placeholder {
-	color: $text-white;
+	color: $text-black-700;
 }
 .button {
 	position: relative;

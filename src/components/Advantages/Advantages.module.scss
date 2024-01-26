@@ -42,7 +42,7 @@
 	}
 }
 .item {
-	color: $text-black-600;
+	color: $text-black-700;
 	font-family: Montserrat;
 	font-size: 15px;
 	font-style: normal;
@@ -71,7 +71,7 @@
 }
 .item:nth-child(odd) {
 	background-color: $bg-stone-400;
-	color: $text-white;
+	
 }
 
 .button {
@@ -83,7 +83,7 @@
 	// padding-right: 25px;
 	// padding-left: 25px;
 	height: 48px;
-	width: 290px;
+	width: 367px;
 	// !Изменить цвет показать Коле
 	border: 1px solid rgba(179, 179, 179, 0.2);
 	// color: #b3b3b3;

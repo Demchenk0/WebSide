@@ -22,7 +22,6 @@ const MySwiper = () => {
 			slidesPerView: 3,
 			pagination: { clickable: true },
 			spaceBetween: 30,
-			//add thi
 			injectStyles: [
 				`
         .swiper {
@@ -174,5 +173,3 @@ const MySwiper = () => {
 
 export default MySwiper;
 
-// <Image src={Left} alt="left" />
-// 			<Image src={Right} alt="right" />

@@ -4,13 +4,8 @@ import s from './Header.module.scss';
 import Image from 'next/image';
 import Logo from '../../img/Logo.svg';
 import Phone from '../../img/Phone.svg';
-import { useMediaQuery } from 'react-responsive'
-// import HeaderMob from './HeaderMob';
 
 const Header = () => {
-    // const isDesktopOrLaptop = useMediaQuery({
-    //     query: '(max-width: 756px)'
-    //   })
 	return (
 		<header className={s.header}>
 			<div className={s.container}>
@@ -19,7 +14,23 @@ const Header = () => {
 				</a>
 				<nav>
 					<ul className={s.list}>
-						<li className={s.item}>Послуги</li>
+						<li className={s.item}>
+							<div className={s.dropdown}>
+							<a href="/" className={s.item}>Послуги</a>
+							<span className={s.point}></span>
+								<ul className={s.content}>
+									<li className={s.contentItem}>
+										<a href="">Фуршет</a>
+									</li>
+									<li className={s.contentItem}>
+										<a href="">Доставка в офіс</a>
+									</li>
+									<li className={s.contentItem}>
+										<a href="">Здорове харчування</a>
+									</li>
+								</ul>
+							</div>
+						</li>
 						<li className={s.item}>Про нас</li>
 						<li className={s.item}>Галерея</li>
 						<li className={s.item}>Відгуки</li>
