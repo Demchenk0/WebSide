@@ -5,7 +5,7 @@ const Form = () => {
 	return (
 		<section className={s.section}>
 			<div className={s.container}>
-			<div>
+			<div className={s.boxText}>
 				<h1 className={s.title}>Залиште заявку</h1>
 				<p className={s.text}>Заповнюйте форму і ми зв’яжемось з вами</p>
 			</div>

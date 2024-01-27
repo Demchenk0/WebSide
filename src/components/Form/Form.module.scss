@@ -26,10 +26,15 @@
 	padding: 0;
 }
 }
-
+.boxText{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
 .title {
 	text-align: center;
-	color: $text-white;
+	color: $text-black-700;
 	font-family: Montserrat;
 	font-size: 24px;
 	font-style: normal;
@@ -51,7 +56,7 @@
 }
 .text {
 	padding: 5px 55px 15px 55px;
-	color: $text-white;
+	color: $text-black-700;
 	text-align: center;
 	font-family: Montserrat;
 	font-size: 15px;

@@ -73,6 +73,7 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 150%; /* 22.5px */
+	text-align: center;
 	@media screen and (min-width: $desktop) {
 		max-width: 366px;
 		font-size: 24px;
