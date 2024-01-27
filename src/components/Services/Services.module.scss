@@ -174,7 +174,9 @@ border-bottom: 3px solid white;
 	// padding-left: 25px;
 	height: 48px;
 	// width: 290px;
-	width: 367px;
+	// width: 367px;
+	max-width: 367px;
+    width: 100%;
 	// !Изменить цвет показать Коле
 	border: 1px solid rgba(179, 179, 179, 0.2);
 	// color: #b3b3b3;
