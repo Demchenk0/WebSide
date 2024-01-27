@@ -11,7 +11,7 @@ const Services = () => {
 			<div className={s.container}>
 				<div className={s.textBox}>
 					<h1 className={s.title}>Послуги</h1>
-					<p className={s.text}>
+					<p className={s.titletext}>
 						Оберіть те, що підходить саме Вам. Якщо важко зробити вибір, залиште
 						заявку та ми Вам допоможемо
 					</p>
@@ -19,30 +19,38 @@ const Services = () => {
 
 				<div className={s.service}>
 					<div className={s.card}>
-						<Image src={Service1} alt="phone" className={s.img} />
-						<div className={s.boxText}>
-							<p>Фуршет</p>
-							<button>Детальніше</button>
+						<div className={s.sss}>
+							<div className={s.hov}>
+								<button className={s.hovbtn}>Детальніше</button>
+							</div>
+							<Image src={Service1} alt="phone" className={s.img} />
 						</div>
+						<p className={s.text}>Фуршет</p>
+						<button className={s.btn}>Детальніше</button>
 					</div>
 					<div className={s.card}>
-						<Image src={Service2} alt="phone" className={s.img} />
-						<div className={s.boxText}>
-							<p>Здорове  <br /> харчування</p>
-							<button>Детальніше</button>
+						<div className={s.sss}>
+							<div className={s.hov}>
+								<button className={s.hovbtn}>Детальніше</button>
+							</div>
+							<Image src={Service2} alt="phone" className={s.img} />
 						</div>
+						<p className={s.text}>Здорове  харчування</p>
+						<button className={s.btn}>Детальніше</button>
 					</div>
 					<div className={s.card}>
-						<Image src={Service3} alt="phone" className={s.img} />
-						<div className={s.boxText}>
-							<p>Доставка <br /> в офіси</p>
-							<button>Детальніше</button>
+						<div className={s.sss}>
+							<div className={s.hov}>
+								<button className={s.hovbtn}>Детальніше</button>
+							</div>
+							<Image src={Service3} alt="phone" className={s.img} />
 						</div>
+						<p className={s.text}>Доставка в офіси</p>
+						<button className={s.btn}>Детальніше</button>
 					</div>
+					
 				</div>
-					<button className={`${s.button} ${s.animate}`}>
-						Залишити заявку
-					</button>
+				<button className={`${s.button} ${s.animate}`}>Залишити заявку</button>
 			</div>
 		</section>
 	);
